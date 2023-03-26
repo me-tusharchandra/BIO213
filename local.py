@@ -46,7 +46,7 @@ if __name__ == '__main__':
     match = int(input("Enter the Match score: "))
     mismatch = int(input("Enter the Mismatch score: "))
     gap = int(input("Enter the Gap penalty: "))
-s
+    
     m = len(seq1) + 1
     n = len(seq2) + 1
 
