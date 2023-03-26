@@ -3,17 +3,17 @@
 # matrix formation
 def matrix(arr, gap, match, mismatch, m, n):
     for i in range(1,n):
-        arr[i][0] = arr[i-1][0] + int(gap)
+        arr[i][0] = arr[i-1][0] + gap
 
     for j in range(1,m):
-        arr[0][j] = arr[0][j-1] + int(gap)
+        arr[0][j] = arr[0][j-1] + gap
 
     for i in range(1,n):
             for j in range(1,m):
                 if seq1[j-1] == seq2[i-1]:
-                    arr[i][j] = max(arr[i-1][j-1] + match, arr[i-1][j] + int(gap), arr[i][j-1] + int(gap))
+                    arr[i][j] = max(arr[i-1][j-1] + match, arr[i-1][j] + gap, arr[i][j-1] + gap)
                 else:
-                    arr[i][j] = max(arr[i-1][j-1] + mismatch, arr[i-1][j] + int(gap), arr[i][j-1] + int(gap))
+                    arr[i][j] = max(arr[i-1][j-1] + mismatch, arr[i-1][j] + gap, arr[i][j-1] + gap)
 
 
 def optimalAlignment(arr, seq1, seq2, i, j, str1, str2, score):
