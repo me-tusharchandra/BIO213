@@ -31,11 +31,11 @@ def optimalAlignment(arr, seq1, seq2, i, j, str1, str2, score):
         if arr[i-1][j-1] + mismatch == arr[i][j]:
             optimalAlignment(arr, seq1, seq2, i-1, j-1, seq1[j-1] + str1, seq2[i-1] + str2, score + mismatch)
 
-    if i > 0 and arr[i-1][j] + gap == arr[i][j]:
-        optimalAlignment(arr, seq1, seq2, i-1, j, '_' + str1, seq2[i-1] + str2, score + gap)
-
     if j > 0 and arr[i][j-1] + gap == arr[i][j]:
         optimalAlignment(arr, seq1, seq2, i, j-1, seq1[j-1] + str1, '_' + str2, score + gap)
+
+    if i > 0 and arr[i-1][j] + gap == arr[i][j]:
+        optimalAlignment(arr, seq1, seq2, i-1, j, '_' + str1, seq2[i-1] + str2, score + gap)
 
 if __name__ == '__main__':
     print()

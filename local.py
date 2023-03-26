@@ -30,11 +30,12 @@ def localAlignment(arr, seq1, seq2, i, j, str1, str2, score):
         if arr[i][j] == arr[i-1][j-1] + mismatch:
             localAlignment(arr, seq1, seq2, i-1, j-1, str1, str2, score)
 
+    if j > 0 and arr[i][j] == arr[i][j-1] + gap:
+        localAlignment(arr, seq1, seq2, i, j-1, str1, str2, score)
+
     if i > 0 and arr[i][j] == arr[i-1][j] + gap:
         localAlignment(arr, seq1, seq2, i-1, j, str1, str2, score)
 
-    if j > 0 and arr[i][j] == arr[i][j-1] + gap:
-        localAlignment(arr, seq1, seq2, i, j-1, str1, str2, score)
 
 if __name__ == '__main__':
     print("********** Welcome to the Local Alignment Program **********\n")
