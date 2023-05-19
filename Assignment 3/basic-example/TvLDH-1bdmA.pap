@@ -1,0 +1,9 @@
+ _aln.pos         10        20        30        40        50        60
+2ecjA     GSSGSSGALENLQVEASCSVCLEYLKEPVIIECGHNFCKACITRWW--ED------------------ 
+protein   ------MALPAGPAEAACALCQRAPREPVRADCGHRFCRACVVRFWAEEDGPFPCPECADDCWQRAVE 
+ _consrvd        **     ** *  *     ***   *** ** **  * *  **
+
+ _aln.p   70        80        90       100       110       120
+2ecjA     ------------LE------RDFP---------C-----PVC--------------- 
+protein   PGRPPLSRRLLALEEAAAPARDGPASEAALQLLCRADAGPLCAACRMAAGPEPPEWE 
+ _consrvd             **      ** *         *     * *
