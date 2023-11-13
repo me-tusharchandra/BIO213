@@ -1,4 +1,4 @@
-# README for BIO213 Project - Introduction to Quantitative Biology
+# README for BIO213: Introduction to Quantitative Biology
 
 ## Overview
 
